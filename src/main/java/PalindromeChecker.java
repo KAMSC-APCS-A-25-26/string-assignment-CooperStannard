@@ -3,14 +3,21 @@ import java.util.Scanner;
 public class PalindromeChecker {
     public static void main(String[] args) {
         // TODO: Create a Scanner and read a full line from the user with nextLine().
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String word = sc.nextLine();
+
         //       Keep the original input string so you can print it in the final message.
 
         // TODO: Build a lowercase version of the input for checking (case-insensitive comparison).
         //       (You don't need to remove spaces/punctuation for the current tests.)
+        String newWord = word.toLowerCase();
 
         // TODO: Determine whether the lowercase string reads the same forwards and backwards.
         //       Tip: compare it to a reversed copy of itself.
-
+        StringBuilder reversedWord = new StringBuilder(word);
+        reversedWord.reverse();
+        System.out.println(reversedWord);
         // TODO: Treat single-character inputs as palindromes (the above check will already handle this).
 
         // TODO: Print EXACTLY ONE of the following lines (no extra punctuation/labels):
