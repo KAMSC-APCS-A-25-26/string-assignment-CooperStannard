@@ -15,7 +15,7 @@ public class PalindromeChecker {
 
         // TODO: Determine whether the lowercase string reads the same forwards and backwards.
         //       Tip: compare it to a reversed copy of itself.
-        String reversedWord = new StringBuilder(word).reverse().toString();
+        String reversedWord = new StringBuilder(newWord).reverse().toString();
 
         if (reversedWord.equals(newWord)){
             System.out.println(word +" is a palindrome");
